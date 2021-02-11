@@ -1,0 +1,36 @@
+/* regole debug*/
+ [class*="col-"]{
+  /* border: 1px solid black; */
+  min-height: 45px;
+}
+
+
+/* regole generalli */
+.ms_conteiner{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    left: 10%;
+    right: 10%;
+}
+/* regole header */
+.ms_logo{
+  width: 16%;
+  float: left;
+    padding: 15px 0 ;
+}
+header .navbar-nav{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight:bold;
+
+}
+header .navbar-nav:first-child{
+  margin-left: 10%;
+}
+header .navbar-nav:last-child{
+  margin-right: 7%;
+}
