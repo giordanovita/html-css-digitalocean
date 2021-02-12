@@ -6,7 +6,7 @@
 /* regole @Query */
 
 /* Small devices (tablets, 768px and up) */
-@media all and  (min-width: 300px) and (max-widht:769px) {
+@media all and  (min-width: 300px) and (max-widht:767px) {
 .ms_logo{
 width: 20%
 }
@@ -14,7 +14,7 @@ width: 20%
  }
 
 /* Medium devices (desktops, 992px and up) */
-@media screen and (min-width:770px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
   #navbar.navbar-collapse.collapse.in, .navbar-toggle{
     display: inline-block;
     position: absolute;
@@ -39,12 +39,17 @@ body{
 .ms_conteiner{
   width:90%;
   margin:auto;
+  text-align: center;
 }
 
 
 .navbar-fixed-bottom, .navbar-fixed-top {
     left: 10%;
     right: 10%;
+
+}
+.ms_grey{
+  color: rgb(122, 133, 159);
 }
 /* regole header */
 .ms_header{
@@ -66,6 +71,8 @@ header .navbar-nav{
   margin-top: 10px;
   font-size: 13px;
   font-weight:bold;
+  z-index: 999;
+
 
 }
 header .navbar-nav:first-child{
@@ -78,16 +85,22 @@ header .navbar-nav:last-child{
 .ms_jumbotron{
   width: 100%;
   min-height: 600px;
-  background-image: url(img/jumbo.svg);
+  background-color: #0069ff;
+  background-image: url(img/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
+  background-size: cover;
+  background-position: center;
   padding-top: 165px;
+  /* margin-bottom: 50px; */
 }
 .ms_conteiner .ms_jumbotitle{
   color:white;
+  text-align: left;
 }
 .ms_conteiner .ms_jumbotitle h1{
   font-size: 55px;
   font-weight: bold;
   padding-bottom: 30px;
+
 }
 .ms_jamboparagraph{
   font-size: 17px;
@@ -95,17 +108,21 @@ header .navbar-nav:last-child{
 }
 .myform{
   background-color: white;
-  padding:20px;
+  padding: 0 10px 10px 10px;
+  border: 10px solid transparent;
+  border-radius: 5px;
 }
 .ms_formsignin{
   font-weight: bold;
   text-align: center;
 }
+
 .ms_formsignin:last-of-type{
   color: rgb(0, 106, 255);
 }
 .myform .form-control{
   padding:0;
+
 
 }
 .myform #inputPassword{
@@ -116,16 +133,98 @@ header .navbar-nav:last-child{
   border-radius: 4px;
   border-radius: 4px;
 }
+.ms_jumbotron > div > div > div > div.col-xs-12.col-md-5.col-lg-5 > div > form > div.checkbox{
+  text-align: left;
+}
 .myform .btn-group-lg>.btn, .btn-lg {
     padding: 6px 4px;
     font-size: 15px;
     border-radius: 10px;
     background-color:rgb(87, 154, 255);
     border-color:rgb(87, 154, 255);
+    font-weight: bold;
+
 
 }
 .myform .btn-group-lg>.btn, .btn-lg:last-child{
   background-color:white;
   border-color:rgb(99, 99, 99);
   color: rgb(99, 99, 99);
+  position: relative;
+  margin-bottom: 20px;
+
+}
+.ms_googleico{
+  width: 15px;
+  line-height: 1.3333333;
+  position: absolute;
+  left:10px;
+  top:8px;
+}
+.ms_condition{
+  font-size: 12px;
+padding: 30px 0;
+font-weight: bold;
+
+white-space: nowrap;
+}
+.ms_condition a{
+  text-decoration: underline;
+}
+/* sezione ms_logosponsor */
+.ms_logosponsor{
+  padding-bottom: 200px;
+  padding: 50px 0 0 30px;
+  background-color: rgb(243, 245, 249);
+}
+.ms_logosponsor h5{
+  font-weight: bold;
+}
+ .ms_logosponsor div.col-xs-6{
+   padding: 0;
+ }
+ section.ms_logosponsor > div > div > div > div.row > div > a{
+  margin-top: 30px;
+  border: none;
+  background-color: transparent;
+
+
+ }
+  section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a{
+  margin-top:22px;
+  }
+ section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a > img{
+  width: 127px;
+}
+body > main > section.ms_logosponsor > div > div > div > div.row > div.col-xs-12.col-md-12.col-lg-12{
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight:bold;
+}
+/* sezione ms_trident  */
+.ms_trident h2{
+  font-size: 33px;
+  font-weight: bold;
+  color: rgb(3, 28, 78);
+}
+.ms_trident  p{
+  font-size: 20px;
+  font-weight: 500;
+
+
+}
+section.ms_trident > div > div > div:nth-child(2) > div > ul{
+  border-left: 2px solid rgb(204, 204, 204);
+    margin-top: 70px;
+
+}
+
+section.ms_trident > div > div > div:nth-child(2) > div > ul > li{
+  text-align: left;
+  border: none;
+}
+section.ms_trident > div > div > div:nth-child(2) > div > ul > li > a{
+  color: rgb(128, 138, 162);
+  font-size: 17px;
+  font-weight: 500;
 }
