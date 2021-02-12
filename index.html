@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
     <title>DigitalOcean</title>
   </head>
   <body>
@@ -199,14 +200,13 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-lg-12">
            <h2>Deploy and scale seamlessly</h2>
-           <p>Our optimized configuration process saves your team when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+           <p class="ms_tridentparagraph">Our optimized configuration process saves your team when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
           </div>
 
         </div>
         <!-- prova composizione schema -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 ">
-            <!-- component BS -->
             <ul class="list-group">
               <li class="list-group-item"><a class="ms_sidelistlink" href="#">Deploy</a></li>
               <li class="list-group-item"><a class="ms_sidelistlink" href="#">Scale</a></li>
@@ -215,8 +215,166 @@
               <li class="list-group-item"><a class="ms_sidelistlink" href="#">Monitor</a></li>
             </ul>
             </div>
+            <div class="col-xs-12 col-md-3 col-lg-3">
+              <img src="img/cluster-deploy.svg" alt="">
+              <h3 class="ms_tridenttitle">Cluster deployments</h3>
 
-          </div>
+              <p class="ms_tridentparagraphcol">Provision multiple Droplets (virtual
+                 machines) in seconds with our control
+                 panel, CLI, or directly against our API
+              </p>
+
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3">
+              <img src="img/optimized-compute.svg" alt="">
+              <h3 class="ms_tridenttitle">Optimized compute types</h3>
+
+              <p class="ms_tridentparagraphcol">Get the compute resources you need with Standard or Optimized Droplets.</p>
+
+            </div>
+            </div>
+            <div class="row">
+
+
+
+            <div class="col-xs-12 col-md-3 col-lg-3 ms_floatrx">
+              <img src="img/one-click.svg" alt="">
+              <h3 class="ms_tridenttitle">One-click apps</h3>
+
+              <p class="ms_tridentparagraphcol">Skip the install and configuration process with pre-built open source images around the   world,  supporting Rails, Cassandra, Docker, and more.
+              </p>
+
+            </div>
+
+            <div class="col-xs-12 col-md-3 col-lg-3 ms_floatrx">
+                <img src="img/global.svg" alt="">
+              <h3 class="ms_tridenttitle">Global availability</h3>
+
+              <p class="ms_tridentparagraphcol"> Deploy to any of our data center regions
+               with pre-built open source images around the world
+              </p>
+
+            </div>
+          </div> -->
+
+
+          <!-- <div class="row ms_withoutclearfix">
+            <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 ">
+              <ul class="list-group">
+                <li class="list-group-item"><a class="ms_sidelistlink" href="#">Deploy</a></li>
+                <li class="list-group-item"><a class="ms_sidelistlink" href="#">Scale</a></li>
+                <li class="list-group-item"><a class="ms_sidelistlink" href="#">Store</a></li>
+                <li class="list-group-item"><a class="ms_sidelistlink" href="#">Secure</a></li>
+                <li class="list-group-item"><a class="ms_sidelistlink" href="#">Monitor</a></li>
+              </ul>
+              </div>
+            </div>
+
+            <div class="row ms_withoutclearfix">
+              <div class="col-xs-12 col-md-3 col-lg-3">
+                <img src="img/cluster-deploy.svg" alt="">
+                <h3 class="ms_tridenttitle">Cluster deployments</h3>
+
+                <p class="ms_tridentparagraphcol">Provision multiple Droplets (virtual
+                   machines) in seconds with our control
+                   panel, CLI, or directly against our API
+                </p>
+
+              </div>
+              <div class="col-xs-12 col-md-3 col-lg-3">
+                <img src="img/optimized-compute.svg" alt="">
+                <h3 class="ms_tridenttitle">Optimized compute types</h3>
+
+                <p class="ms_tridentparagraphcol">Get the compute resources you need with Standard or Optimized Droplets.</p>
+
+              </div>
+              <div class="clearfix visible-lg-block">
+
+              </div>
+
+              <div class="col-xs-12 col-md-3 col-lg-3">
+                <img src="img/one-click.svg" alt="">
+                <h3 class="ms_tridenttitle">One-click apps</h3>
+
+                <p class="ms_tridentparagraphcol">Skip the install and configuration process with pre-built open source images around the   world,  supporting Rails, Cassandra, Docker, and more.
+                </p>
+
+              </div> -->
+
+              <!-- <div class="col-xs-12 col-md-3 col-lg-3">
+                  <img src="img/global.svg" alt="">
+                <h3 class="ms_tridenttitle">Global availability</h3>
+
+                <p class="ms_tridentparagraphcol"> Deploy to any of our data center regions
+                 with pre-built open source images around the world
+                </p> -->
+
+              <!-- </div>
+              <div class="col-xs-12 col-md-3 col-lg-3">
+                  <img src="img/global.svg" alt="">
+                <h3 class="ms_tridenttitle">Global availability</h3>
+
+                <p class="ms_tridentparagraphcol"> Deploy to any of our data center regions
+                 with pre-built open source images around the world
+                </p> -->
+                <div class="row">
+                  <div class="col-xs-12 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1 ">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a class="ms_sidelistlink" href="#">Deploy</a></li>
+                      <li class="list-group-item"><a class="ms_sidelistlink" href="#">Scale</a></li>
+                      <li class="list-group-item"><a class="ms_sidelistlink" href="#">Store</a></li>
+                      <li class="list-group-item"><a class="ms_sidelistlink" href="#">Secure</a></li>
+                      <li class="list-group-item"><a class="ms_sidelistlink" href="#">Monitor</a></li>
+                    </ul>
+                    </div>
+
+
+                      <div class="col-xs-12 col-md-9 col-lg-9 ms_minitab">
+
+
+                      <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="img/cluster-deploy.svg" alt="">
+                        <h3 class="ms_tridenttitle">Cluster deployments</h3>
+
+                        <p class="ms_tridentparagraphcol">Provision multiple Droplets (virtual
+                           machines) in seconds with our control
+                           panel, CLI, or directly against our API
+                        </p>
+
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="img/optimized-compute.svg" alt="">
+                        <h3 class="ms_tridenttitle">Optimized compute types</h3>
+
+                        <p class="ms_tridentparagraphcol">Get the compute resources you need with Standard or Optimized Droplets.</p>
+
+                      </div>
+
+                      <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="img/one-click.svg" alt="">
+                        <h3 class="ms_tridenttitle">One-click apps</h3>
+
+                        <p class="ms_tridentparagraphcol">Skip the install and configuration process with pre-built open source images around the   world,  supporting Rails, Cassandra, Docker, and more.
+                        </p>
+
+                      </div>
+
+                      <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="img/global.svg" alt="">
+                      <h3 class="ms_tridenttitle">Global availability</h3>
+
+                      <p class="ms_tridentparagraphcol"> Deploy to any of our data center regions
+                       with pre-built open source images around the world
+                      </p>
+
+                      </div>
+                      </div>
+
+
+
+
+
+
 
         </div>
 
