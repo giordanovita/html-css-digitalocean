@@ -1,101 +1,68 @@
 /* regole debug*/
  [class*="col-"]{
   /* border: 1px solid black; */
-  min-height: 45px;
-}
-/* regole @Query */
-
-/* Large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1201px) {
-  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
-    display: none;
-  }
-  .ms_minitab {
-      padding-left: 49px;
-    }
-
-}
-/* Medium devices (desktops, 992px and up) */
-@media screen (max-width:1200px) and (min-width:768px) {
-  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
-    display: inline-block;
-    position: absolute;
-    top:5px;
-    right:0px;
-  }
-
-
+  min-height: 35px;
 }
 
-@media all and (max-widht:768px) {
-
-.ms_logo{
- min-width: 40px;
-}
-  ul.nav:nth-child(1), ul.nav:nth-child(2){
-    display: none;
-  }
-  section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
-    margin-right: none;
-  }
-  section.ms_trident > div > div > div:nth-child(2) > div:nth-child(2), body > main > section.ms_trident > div > div > div:nth-child(2) > div:nth-child(3){
-    margin-top: none;
-  }
-  .ms_minitab {
-      padding-left: 0;
-    }
-
-}
 /* regole generalli */
 body{
   font-family: 'Inter', sans-serif;
 }
+
 .ms_conteiner{
   width:90%;
   margin:auto;
   text-align: center;
 }
 
-
 .navbar-fixed-bottom, .navbar-fixed-top {
-    left: 10%;
-    right: 10%;
-
+  left: 10%;
+  right: 10%;
 }
+
 .ms_grey{
   color: rgb(122, 133, 159);
 }
+
+
 /* regole header */
+
+
 .ms_header{
   width: 100%;
   height: 66px;
   background-color: white;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-
+  right: 0; */
 }
+
 .ms_logo{
   width: 16%;
   float: left;
   padding: 15px 0 ;
 }
+
 header .navbar-nav{
   margin-top: 10px;
   font-size: 13px;
   font-weight:bold;
   z-index: 999;
-
-
 }
+
 header .navbar-nav:first-child{
   margin-left: 10%;
 }
+
 header .navbar-nav:last-child{
   margin-right: 7%;
 }
+
+
 /* regole jumbotron */
+
+
 .ms_jumbotron{
   width: 100%;
   min-height: 600px;
@@ -104,28 +71,31 @@ header .navbar-nav:last-child{
   background-size: cover;
   background-position: center;
   padding-top: 165px;
-  /* margin-bottom: 50px; */
 }
+
 .ms_conteiner .ms_jumbotitle{
   color:white;
   text-align: left;
 }
+
 .ms_conteiner .ms_jumbotitle h1{
   font-size: 55px;
   font-weight: bold;
   padding-bottom: 30px;
-
 }
+
 .ms_jamboparagraph{
   font-size: 17px;
   line-height: 30px;
 }
+
 .myform{
   background-color: white;
   padding: 0 10px 10px 10px;
   border: 10px solid transparent;
   border-radius: 5px;
 }
+
 .ms_formsignin{
   font-weight: bold;
   text-align: center;
@@ -134,11 +104,11 @@ header .navbar-nav:last-child{
 .ms_formsignin:last-of-type{
   color: rgb(0, 106, 255);
 }
+
 .myform .form-control{
   padding:0;
-
-
 }
+
 .myform #inputPassword{
   width: 100%;
   height: 34px;
@@ -147,9 +117,11 @@ header .navbar-nav:last-child{
   border-radius: 4px;
   border-radius: 4px;
 }
+
 .ms_jumbotron > div > div > div > div.col-xs-12.col-md-5.col-lg-5 > div > form > div.checkbox{
   text-align: left;
 }
+
 .myform .btn-group-lg>.btn, .btn-lg {
     padding: 6px 4px;
     font-size: 15px;
@@ -157,17 +129,16 @@ header .navbar-nav:last-child{
     background-color:rgb(87, 154, 255);
     border-color:rgb(87, 154, 255);
     font-weight: bold;
-
-
 }
+
 .myform .btn-group-lg>.btn, .btn-lg:last-child{
   background-color:white;
   border-color:rgb(99, 99, 99);
   color: rgb(99, 99, 99);
   position: relative;
   margin-bottom: 20px;
-
 }
+
 .ms_googleico{
   width: 15px;
   line-height: 1.3333333;
@@ -175,98 +146,232 @@ header .navbar-nav:last-child{
   left:10px;
   top:8px;
 }
+
 .ms_condition{
   font-size: 12px;
-padding: 30px 0;
-font-weight: bold;
-
-white-space: nowrap;
+  padding: 30px 0;
+  font-weight: bold;
+  white-space: nowrap;
 }
+
 .ms_condition a{
   text-decoration: underline;
 }
+
+
 /* sezione ms_logosponsor */
+
+
 .ms_logosponsor{
   padding-bottom: 200px;
   padding: 50px 0 0 30px;
   background-color: rgb(243, 245, 249);
 }
+
 .ms_logosponsor h5{
   font-weight: bold;
 }
- .ms_logosponsor div.col-xs-6{
-   padding: 0;
- }
- section.ms_logosponsor > div > div > div > div.row > div > a{
+
+.ms_logosponsor div.col-xs-6{
+ padding: 0;
+}
+
+section.ms_logosponsor > div > div > div > div.row > div > a{
   margin-top: 30px;
   border: none;
   background-color: transparent;
-
-
  }
-  section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a{
+
+section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a{
   margin-top:22px;
   }
- section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a > img{
+
+section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a > img{
   width: 127px;
 }
+
 body > main > section.ms_logosponsor > div > div > div > div.row > div.col-xs-12.col-md-12.col-lg-12{
   margin-top: 30px;
   font-size: 16px;
   font-weight:bold;
 }
+
+
 /* sezione ms_trident  */
-.ms_trident h2{
+
+
+.ms_sectiontitle{
   font-size: 33px;
   font-weight: bold;
   color: rgb(3, 28, 78);
 }
-.ms_trident  .ms_tridentparagraph{
+
+.ms_paragraph{
   font-size: 20px;
   font-weight: 500;
 }
+
 section.ms_trident > div > div > div:nth-child(2) > div > ul{
   border-left: 2px solid rgb(204, 204, 204);
-    margin-top: 70px;
-
+  margin-top: 70px;
 }
 
 section.ms_trident > div > div > div:nth-child(2) > div > ul > li{
   border: none;
 }
+
 section.ms_trident > div > div > div:nth-child(2) > div > ul > li > a{
   color: rgb(128, 138, 162);
   font-size: 17px;
   font-weight: bold;
 }
 
-
-
 section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > div > div:nth-child(3){
   text-align: left;
 }
+
 .ms_tridenttitle{
-font-size: 17px;
-font-weight: bold;
-color: rgb(3, 27, 78);
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(3, 27, 78);
 }
-section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
-  /* margin-right: 179px; */
-}
-section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1), section.ms_trident > div > div > div:nth-child(3) > div:nth-child(2){
-  /* margin-top: 10px; */
-}
+
+
+
 .ms_tridentparagraphcol{
   font-size: 12px;
 }
-/* .ms_withoutclearfix{
-  clear:none;
-} */
+
 .ms_minitab {
-    padding-left: 49px;
-    margin-top: 75px;
-  }
-.ms_trident > div > div > div:nth-child(2) > div.col-xs-12.col-md-9.col-lg-9.ms_minitab > div:nth-child(3),
-.ms_trident > div > div > div:nth-child(2) > div.col-xs-12.col-md-9.col-lg-9.ms_minitab > div:nth-child(4){
+  padding-left: 49px;
+  margin-top: 75px;
+}
+
+.ms_tablebox{
   margin-top: 35px;
+}
+
+/* regole ms_carosel */
+
+.ms_carosel{
+  background-color:rgb(243, 245, 249);
+  margin-top: 80px;
+}
+.ms_carosel .ms_sectiontitle{
+  padding: 70px 0 25px 0;
+}
+
+.ms_carosel .ms_paragraph{
+  padding-bottom: 60px;
+}
+
+#myCarousel{
+  width: 70%;
+  height: auto;
+  margin-top: 60px;
+  margin: auto;
+}
+.carousel-indicators{
+  background-color: transparent;
+}
+
+.ms_indicatorcontainer{
+  margin-top: 20px;
+}
+
+.carousel-indicators>li, .carousel-indicators .active {
+  border-radius: 100%;
+  border-color: rgb(51, 133, 253);
+  background-color: rgb(0, 106, 255);
+}
+.carousel-indicators>li{
+  background-color: white;
+}
+.carousel-control .glyphicon-chevron-left,
+ .carousel-control .glyphicon-chevron-right{
+  font-size: 60px;
+}
+
+.first-slide, .second-slide, .third-slide {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* sezione ms_features */
+
+
+.ms_features{
+  margin-top: 70px;
+}
+
+.ms_featurestextleft{
+  text-align: left;
+  padding-top: 30px;
+}
+
+
+/* sezione ms_mytable*/
+.ms_mytable{
+  background: linear-gradient(to bottom,rgb(0, 68, 195), #031c4e);
+  color: white;
+}
+
+.ms_mytable .ms_white{
+color: white;
+}
+
+.ms_mybluetablerow{
+  /* DEBUG:  */
+  /* border: 1px solid red; */
+min-height: 30px;
+
+
+}
+
+/* regole @Query */
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1201px) {
+
+  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
+    display: none;
+  }
+
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width:1200px) and (min-width:768px) {
+
+  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    right:0px;
+  }
+}
+
+@media all and (max-width:768px) {
+
+  .ms_logo{
+   min-width: 40px;
+  }
+
+  ul.nav:nth-child(1), ul.nav:nth-child(2){
+    display: none;
+  }
+
+  section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
+    margin-right: none;
+  }
+
+  section.ms_trident > div > div > div:nth-child(2) > div:nth-child(2), body > main > section.ms_trident > div > div > div:nth-child(2) > div:nth-child(3){
+    margin-top: none;
+  }
+
+  .ms_minitab {
+      padding-left: 0;
+      margin-top: 15px;
+    }
+
 }
