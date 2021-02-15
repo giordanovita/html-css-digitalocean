@@ -4,7 +4,7 @@
   min-height: 35px;
 }
 
-/* regole generalli */
+/* regole generali */
 body{
   font-family: 'Inter', sans-serif;
 }
@@ -16,8 +16,8 @@ body{
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
-  left: 10%;
-  right: 10%;
+  left: 0;
+  right: 0;
 }
 
 .ms_grey{
@@ -30,7 +30,7 @@ body{
 
 .ms_header{
   width: 100%;
-  height: 66px;
+  /* height: 66px; */
   background-color: white;
   /* position: fixed;
   top: 0;
@@ -52,11 +52,11 @@ header .navbar-nav{
 }
 
 header .navbar-nav:first-child{
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 header .navbar-nav:last-child{
-  margin-right: 7%;
+  margin-right: 0;
 }
 
 
@@ -302,7 +302,7 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
 
 
 .ms_features{
-  margin-top: 70px;
+  margin: 70px 0 60px 0;
 }
 
 .ms_featurestextleft{
@@ -313,22 +313,184 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
 
 /* sezione ms_mytable*/
 .ms_mytable{
-  background: linear-gradient(to bottom,rgb(0, 68, 195), #031c4e);
   color: white;
+  background: url(https://prismic-io.s3.amazonaws.com/www-static/a2e2e54b-93f5-4579-9fa2-bd957fea611a_bg-map.svg), linear-gradient(to bottom,rgb(0, 68, 195), #031c4e);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+
 }
 
-.ms_mytable .ms_white{
+.ms_white{
 color: white;
+padding: 50px 0 20px 0;
+
 }
 
 .ms_mybluetablerow{
-  /* DEBUG:  */
-  /* border: 1px solid red; */
-min-height: 30px;
-
-
+line-height: 45px;
+border-bottom: 1px solid white;
+font-size: 13px;
+text-align: left;
 }
 
+.ms_mybluetablerow:first-child{
+  border-color: rgb(168, 187, 230);
+}
+
+.ms_mybluetablerow:nth-child(2){
+  border-color: rgb(169, 187, 228);
+}
+
+.ms_mybluetablerow:nth-child(3){
+  border-color: rgb(177, 193, 231);
+}
+
+
+.ms_mybluetablerow:nth-child(4){
+  border-color: rgb(174, 188, 227);
+}
+
+.ms_mybluetablerow:nth-child(5){
+  border-color: rgb(173, 186, 226);
+}
+
+
+.ms_mybluetablerow:last-child{
+  border:none;
+  padding-bottom: 25px;
+}
+
+.ms_citycode{
+  font-weight: 600;
+}
+
+.ms_mybluetablerow a{
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 201, 207);
+}
+
+.ms_mybluetablerow a:hover{
+  text-decoration: none;
+  color: rgb(22, 51, 255);
+}
+
+
+/* sezione ms_secondcarosel */
+.ms_secondcaroselsection{
+  padding: 80px 0 60px 0;
+  background-color: rgb(243, 245, 249);
+}
+
+.ms_secondcaroselsection #myCarousel{
+  width: 60%;
+  margin-top: 60px;
+}
+
+.ms_secondcaroselsection img{
+  width: 90%;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.ms_slidetextup{
+  font-size: 20px;
+  color: rgb(93, 107, 137);
+  padding: 30px 0 0 0;
+}
+
+.ms_namequote, .ms_creditquote{
+  color: rgb(3, 27, 78);
+  display: block;
+}
+
+.ms_namequote{
+  font-weight: bold;
+}
+
+.ms_creditquote{
+  padding-bottom: 20px;
+}
+
+.ms_quotes{
+  padding:10px 0 30px 0;
+}
+
+/* regole sezione ms_prefooter */
+
+.ms_prefooter{
+  background: linear-gradient(to bottom,rgb(0, 68, 195), #031c4e);
+}
+
+.ms_prefooter .btn-default{
+  color: rgb(27, 122, 255);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.ms_prefooter .btn-default:hover{
+  background-color:rgb(122, 133, 157);
+}
+
+footer{
+  min-height: 300px;
+  background-color: rgb(3, 28, 78);
+  padding-bottom: 60px;
+}
+
+.ms_nosidepad{
+  padding:15px 0 0 0;
+  text-align: left;
+}
+
+footer .ms_tridenttitle{
+  color:rgb(254, 254, 255);
+}
+
+.ms_footerlist{
+  list-style: none;
+  padding-left: 0;
+}
+
+.ms_footerlist li{
+  text-align: left;
+}
+
+.ms_footerlist li a{
+  color: rgb(163, 171, 187);
+}
+
+.ms_social-icons ul{
+  list-style-type: none;
+  padding:15px 0 0 0;
+}
+
+.ms_social-icons ul li{
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.ms_social-icons ul li a, .ms_copyright{
+  color: rgb(122, 133, 157);
+}
+
+.ms_social-icons ul li a:hover{
+  font-size: 26px;
+  color: rgb(0, 128, 255);
+}
+
+.ms_copyright{
+  padding:10px 0 5px 0 ;
+  font-weight: 600;
+}
+
+.ms_ny{
+  color: rgb(88, 102, 134);
+  font-weight: 500;
+}
 /* regole @Query */
 
 /* Large devices (large desktops, 1200px and up) */
@@ -338,6 +500,9 @@ min-height: 30px;
     display: none;
   }
 
+  .ms_mybluetablerow:last-child{
+    padding-bottom: 0;
+  }
 
 }
 /* Medium devices (desktops, 992px and up) */
@@ -357,10 +522,6 @@ min-height: 30px;
    min-width: 40px;
   }
 
-  ul.nav:nth-child(1), ul.nav:nth-child(2){
-    display: none;
-  }
-
   section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
     margin-right: none;
   }
@@ -372,6 +533,6 @@ min-height: 30px;
   .ms_minitab {
       padding-left: 0;
       margin-top: 15px;
-    }
+  }
 
 }
