@@ -48,7 +48,10 @@ header .navbar-nav{
   margin-top: 10px;
   font-size: 13px;
   font-weight:bold;
-  z-index: 999;
+}
+
+header .navbar-default{
+  background-color: white;
 }
 
 header .navbar-nav:first-child{
@@ -297,6 +300,29 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
   height: 100%;
 }
 
+.carousel-control.left{
+  background-image: none;
+  background-image: rgb(243, 245, 249);
+  color: rgb(111, 123, 151);
+  left: -110px;
+}
+
+.carousel-control.right{
+  right: -16%;
+  background-image: none;
+  background-image: rgb(243, 245, 249);
+  color: rgb(111, 123, 151);
+
+}
+
+.carousel-control.right{
+  right: -10.5%;
+
+}
+
+.carousel-control.left:hover, .carousel-control.right{
+  color: rgb(3, 28, 78);
+}
 
 /* sezione ms_features */
 
@@ -508,18 +534,35 @@ footer .ms_tridenttitle{
 /* Medium devices (desktops, 992px and up) */
 @media screen and (max-width:1200px) and (min-width:768px) {
 
+  .nav.navbar-nav{
+    display:none;
+  }
+
   #navbar.navbar-collapse.collapse.in, .navbar-toggle{
     display: inline-block;
     position: absolute;
     top:5px;
     right:0px;
   }
+
+  .ms_tableboxsize{
+    width: 50%;
+  }
+
+  .ms_tableboxsizesmaller{
+    width: 25%;
+  }
+
+  .ms_tableboxsizebigger{
+    width:75%;
+  }
+
 }
 
 @media all and (max-width:768px) {
 
   .ms_logo{
-   min-width: 40px;
+   min-width: 122px;
   }
 
   section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
@@ -533,6 +576,29 @@ footer .ms_tridenttitle{
   .ms_minitab {
       padding-left: 0;
       margin-top: 15px;
+  }
+
+  .ms_tablebox {
+    margin-top: 0;
+}
+
+  .carousel-control.left, .carousel-control.right{
+    display: none;
+  }
+
+  .ms_tableboxsizesmaller{
+    padding-left: 0;
+  }
+
+  .ms_mybluetablerow {
+    line-height: 36px;
+    font-size: 11px;
+    vertical-align: middle;
+    height: 36px;
+  }
+
+  .ms_mybluetablerow a{
+    white-space: nowrap;
   }
 
 }
