@@ -1,7 +1,7 @@
-/* regole debug*/
+regole debug*/
  [class*="col-"]{
   /* border: 1px solid black; */
-  min-height: 35px;
+   min-height: 35px;
 }
 
 /* regole generali */
@@ -302,6 +302,7 @@ header .navbar-default .navbar-nav > .active > a{
   background-color: white;
   border-color: rgb(0, 106, 255);
 }
+
 .carousel-control .glyphicon-chevron-left,
  .carousel-control .glyphicon-chevron-right{
   font-size: 60px;
@@ -337,7 +338,6 @@ header .navbar-default .navbar-nav > .active > a{
 }
 
 .ms_caroserltext{
-  padding-top: 20px;
   font-weight: 600;
   color: rgb(26, 49, 94);
 }
@@ -544,25 +544,18 @@ footer .ms_tridenttitle{
 
 @media screen and (min-width:1201px) {
 
-  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
-    display: none;
-  }
-
   .ms_mybluetablerow:last-child{
     padding-bottom: 0;
   }
 }
 @media screen and (max-width:1200px) and (min-width:758px) {
 
-  .nav.navbar-nav{
-    display:none;
+  #navbar.navbar-collapse.collapse{
+    display: none !important;
   }
 
-  #navbar.navbar-collapse.collapse.in, .navbar-toggle{
-    display: inline-block;
-    position: absolute;
-    top:5px;
-    right:0px;
+  .navbar-toggle{
+    display: block !important;
   }
 
   .ms_tableboxsize{
@@ -575,6 +568,10 @@ footer .ms_tridenttitle{
 
   .ms_tableboxsizebigger{
     width:75%;
+  }
+
+  .carousel-control.left{
+    left: -84px;
   }
 
 }
@@ -639,6 +636,10 @@ footer .ms_tridenttitle{
 
   .ms_tableboxsizebigger{
     width:70%;
+  }
+
+  .carousel-control.left{
+    left: -84px;
   }
 
 }
