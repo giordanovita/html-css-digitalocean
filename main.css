@@ -30,12 +30,7 @@ body{
 
 .ms_header{
   width: 100%;
-  /* height: 66px; */
   background-color: white;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
 }
 
 .ms_logo{
@@ -62,6 +57,33 @@ header .navbar-nav:last-child{
   margin-right: 0;
 }
 
+header .navbar-default .navbar-toggle {
+  border: 0;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+  background-color:rgb(58, 138, 255);
+}
+
+header .nav>li>a{
+  padding: 10px 10px;
+}
+
+header .navbar-default .navbar-nav>li>a {
+  color:rgb(28, 50, 94)
+}
+
+header nav .btn.btn-default{
+  border-color: rgb(0, 106, 255);
+
+}
+
+header .navbar-default .navbar-nav > .active > a{
+  color: rgb(0, 106, 255);
+  padding: 5px 10px;
+  background-color: white;
+  margin-top: 5px;
+}
 
 /* regole jumbotron */
 
@@ -74,6 +96,7 @@ header .navbar-nav:last-child{
   background-size: cover;
   background-position: center;
   padding-top: 165px;
+  padding-bottom: 50px;
 }
 
 .ms_conteiner .ms_jumbotitle{
@@ -121,7 +144,7 @@ header .navbar-nav:last-child{
   border-radius: 4px;
 }
 
-.ms_jumbotron > div > div > div > div.col-xs-12.col-md-5.col-lg-5 > div > form > div.checkbox{
+.ms_jumbotron .checkbox{
   text-align: left;
 }
 
@@ -175,26 +198,12 @@ header .navbar-nav:last-child{
   font-weight: bold;
 }
 
-.ms_logosponsor div.col-xs-6{
- padding: 0;
-}
-
-section.ms_logosponsor > div > div > div > div.row > div > a{
-  margin-top: 30px;
-  border: none;
-  background-color: transparent;
- }
-
-section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a{
-  margin-top:22px;
-  }
-
-section.ms_logosponsor > div > div > div > div.row > div:nth-child(2) > a > img{
+.ms_logosponsor .ms_git > img{
   width: 127px;
+  margin-top:-7px;
 }
 
-body > main > section.ms_logosponsor > div > div > div > div.row > div.col-xs-12.col-md-12.col-lg-12{
-  margin-top: 30px;
+.ms_viewcust{
   font-size: 16px;
   font-weight:bold;
 }
@@ -202,6 +211,9 @@ body > main > section.ms_logosponsor > div > div > div > div.row > div.col-xs-12
 
 /* sezione ms_trident  */
 
+.ms_trident{
+  padding-top:60px;
+}
 
 .ms_sectiontitle{
   font-size: 33px;
@@ -214,22 +226,22 @@ body > main > section.ms_logosponsor > div > div > div > div.row > div.col-xs-12
   font-weight: 500;
 }
 
-section.ms_trident > div > div > div:nth-child(2) > div > ul{
+.ms_trident .list-group{
   border-left: 2px solid rgb(204, 204, 204);
   margin-top: 70px;
 }
 
-section.ms_trident > div > div > div:nth-child(2) > div > ul > li{
+.list-group-item{
   border: none;
 }
 
-section.ms_trident > div > div > div:nth-child(2) > div > ul > li > a{
+.ms_sidelistlink{
   color: rgb(128, 138, 162);
   font-size: 17px;
   font-weight: bold;
 }
 
-section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > div > div:nth-child(3){
+.ms_tableboxsizebigger, .ms_tableboxsizesmaller{
   text-align: left;
 }
 
@@ -239,10 +251,9 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
   color: rgb(3, 27, 78);
 }
 
-
-
 .ms_tridentparagraphcol{
   font-size: 12px;
+  font-weight: 600;
 }
 
 .ms_minitab {
@@ -282,13 +293,14 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
   margin-top: 20px;
 }
 
-.carousel-indicators>li, .carousel-indicators .active {
-  border-radius: 100%;
-  border-color: rgb(51, 133, 253);
+ .carousel-indicators li.active{
   background-color: rgb(0, 106, 255);
 }
+
 .carousel-indicators>li{
+  border-radius: 100%;
   background-color: white;
+  border-color: rgb(0, 106, 255);
 }
 .carousel-control .glyphicon-chevron-left,
  .carousel-control .glyphicon-chevron-right{
@@ -320,8 +332,14 @@ section.ms_trident > div > div > div:nth-child(2), section.ms_trident > div > di
 
 }
 
-.carousel-control.left:hover, .carousel-control.right{
+.carousel-control.left:hover, .carousel-control.right:hover{
   color: rgb(3, 28, 78);
+}
+
+.ms_caroserltext{
+  padding-top: 20px;
+  font-weight: 600;
+  color: rgb(26, 49, 94);
 }
 
 /* sezione ms_features */
@@ -410,15 +428,16 @@ text-align: left;
   background-color: rgb(243, 245, 249);
 }
 
-.ms_secondcaroselsection #myCarousel{
-  width: 60%;
-  margin-top: 60px;
+.ms_secondcaroselsection #myCarousel_ms{
+  width: 40%;
+  margin: 60px auto 0 auto;
 }
 
 .ms_secondcaroselsection img{
   width: 90%;
   margin: auto;
   padding-top: 45px;
+  background: white;
 }
 
 .ms_slidetextup{
@@ -442,12 +461,16 @@ text-align: left;
 
 .ms_quotes{
   padding:10px 0 30px 0;
+  background-color: white;
+}
+
+.ms_secondcaroselsection .carousel-control.right{
+  right: -15.5%;
 }
 
 /* regole sezione ms_prefooter */
-
 .ms_prefooter{
-  background: linear-gradient(to bottom,rgb(0, 68, 195), #031c4e);
+  background: linear-gradient(to bottom,rgb(0, 66, 187), rgb(0, 32, 155));
 }
 
 .ms_prefooter .btn-default{
@@ -519,7 +542,6 @@ footer .ms_tridenttitle{
 }
 /* regole @Query */
 
-/* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width:1201px) {
 
   #navbar.navbar-collapse.collapse.in, .navbar-toggle{
@@ -529,10 +551,8 @@ footer .ms_tridenttitle{
   .ms_mybluetablerow:last-child{
     padding-bottom: 0;
   }
-
 }
-/* Medium devices (desktops, 992px and up) */
-@media screen and (max-width:1200px) and (min-width:768px) {
+@media screen and (max-width:1200px) and (min-width:758px) {
 
   .nav.navbar-nav{
     display:none;
@@ -559,27 +579,26 @@ footer .ms_tridenttitle{
 
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:757px) {
 
   .ms_logo{
    min-width: 122px;
   }
-
-  section.ms_trident > div > div > div:nth-child(3) > div:nth-child(1){
-    margin-right: none;
+  .ms_jumbotron{
+    padding-top: 100px
   }
 
-  section.ms_trident > div > div > div:nth-child(2) > div:nth-child(2), body > main > section.ms_trident > div > div > div:nth-child(2) > div:nth-child(3){
-    margin-top: none;
+  .ms_conteiner .ms_jumbotitle h1 {
+    font-size: 35px;
   }
 
   .ms_minitab {
-      padding-left: 0;
-      margin-top: 15px;
+    padding-left: 0;
+    margin-top: 15px;
   }
 
-  .ms_tablebox {
-    margin-top: 0;
+  .ms_tableboxsize {
+    margin-top: 10px;
 }
 
   .carousel-control.left, .carousel-control.right{
@@ -599,6 +618,27 @@ footer .ms_tridenttitle{
 
   .ms_mybluetablerow a{
     white-space: nowrap;
+  }
+
+  .ms_secondcaroselsection #myCarousel_ms {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width:1200px) and (min-width:758px){
+
+
+  .ms_tableboxsize{
+    width: 50%;
+  }
+
+  .ms_tableboxsizesmaller{
+    width: 20%;
+  }
+
+  .ms_tableboxsizebigger{
+    width:70%;
   }
 
 }
