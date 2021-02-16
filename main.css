@@ -1,4 +1,4 @@
-regole debug*/
+/* regole debug */
  [class*="col-"]{
   /* border: 1px solid black; */
    min-height: 35px;
@@ -606,6 +606,19 @@ footer .ms_tridenttitle{
     padding-left: 0;
   }
 
+  #myCarousel{
+    width: 89%;
+  }
+
+  .carousel-indicators{
+    margin-bottom: 35px;
+  }
+
+
+  .ms_caroserltext{
+    margin-top: 15px;
+  }
+
   .ms_mybluetablerow {
     line-height: 36px;
     font-size: 11px;
@@ -618,7 +631,7 @@ footer .ms_tridenttitle{
   }
 
   .ms_secondcaroselsection #myCarousel_ms {
-    width: 95%;
+    width: 60%;
   }
 
 }
